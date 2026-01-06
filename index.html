@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Order Checkout - Premium Wireless Headphones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-content">
+            <div class="header-brand">🛒 Your Store</div>
+            <div class="header-trust">
+                <div class="trust-item">✓ Trusted by 5M+ users</div>
+                <div class="trust-item">🚚 Free Shipping</div>
+                <div class="trust-item">🛡️ Secure Checkout</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Order Header -->
+        <div class="order-header">
+            <div class="order-id">
+                <div class="order-id-main">
+                    <h1>Order #ORD-2026-001234</h1>
+                    <div class="order-meta">
+                        <div class="order-meta-item">📅 Jan 6, 2026</div>
+                        <div class="order-meta-item">🕐 10:30 AM</div>
+                        <div class="order-meta-item"><span class="status-badge">✓ Order Placed</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Progress Tracker -->
+        <div class="progress-tracker">
+            <div class="progress-title">🔍 Order Progress</div>
+            <div class="progress-steps">
+                <div class="progress-step completed">
+                    <div class="progress-dot">✓</div>
+                    <div class="progress-label">Order Placed</div>
+                    <div class="progress-date">Jan 6, 10:30 AM</div>
+                </div>
+                <div class="progress-step completed">
+                    <div class="progress-dot">✓</div>
+                    <div class="progress-label">Processing</div>
+                    <div class="progress-date">Jan 6, 11:45 AM</div>
+                </div>
+                <div class="progress-step active">
+                    <div class="progress-dot">📦</div>
+                    <div class="progress-label">Ready to Ship</div>
+                    <div class="progress-date">Expected Jan 7</div>
+                </div>
+                <div class="progress-step">
+                    <div class="progress-dot">🚚</div>
+                    <div class="progress-label">Delivered</div>
+                    <div class="progress-date">Est. Jan 9-12</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Items Section -->
+        <div class="section">
+            <div class="section-title"><span>📦</span> Your Items</div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">🎧</div>
+                    <div class="product-name">Premium Wireless Headphones</div>
+                    <div class="product-sku">Model: WH-1000XM4</div>
+                    <div class="product-price">₹9,999</div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">🎁</div>
+                    <div class="product-name">Protective Carrying Case</div>
+                    <div class="product-sku">Model: CASE-002</div>
+                    <div class="product-price">₹2,499</div>
+                </div>
+            </div>
+            <div class="price-summary">
+                <div class="price-row">
+                    <span>Subtotal:</span>
+                    <span>₹15,498</span>
+                </div>
+                <div class="price-row">
+                    <span>Shipping:</span>
+                    <span>Free</span>
+                </div>
+                <div class="price-row">
+                    <span>Tax:</span>
+                    <span>₹2,790</span>
+                </div>
+                <div class="price-row total">
+                    <span>Total:</span>
+                    <span id="base-total">₹18,288</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Premium Offerings Section -->
+        <div class="section">
+            <div class="section-title"><span>🛡️</span> Premium Protection Options</div>
+            <p style="color: var(--text-secondary); margin-bottom: 24px; font-size: 14px;">Enhance your purchase with optional protection & benefits</p>
+            
+            <div class="offerings-grid">
+                <!-- Warranty Card -->
+                <div class="offering-card" id="offering-warranty">
+                    <div class="offering-badge">⭐ Best Seller</div>
+                    <div class="offering-icon">🛡️</div>
+                    <div class="offering-title">Complete Device Protection</div>
+                    <div class="offering-subtitle">2-Year Extended Warranty</div>
+                    <div class="offering-description">Covers accidental damage, manufacturing defects, and free replacements. Complete peace of mind for 2 years.</div>
+                    <ul class="offering-benefits">
+                        <li>Full replacement if damaged</li>
+                        <li>Zero deductibles or hidden charges</li>
+                        <li>24-hour claim processing</li>
+                        <li>No questions asked replacement</li>
+                    </ul>
+                    <div class="offering-review">
+                        <div class="review-author">⭐⭐⭐⭐ Sarah K.</div>
+                        <div class="review-text">"Dropped my headphones in a week. Got replacement in 24 hours!"</div>
+                    </div>
+                    <div class="offering-footer">
+                        <div class="offering-price">₹1,999</div>
+                        <button class="add-to-cart" data-offering="warranty">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Support Card -->
+                <div class="offering-card" id="offering-support">
+                    <div class="offering-badge popular">💬 Popular</div>
+                    <div class="offering-icon">📞</div>
+                    <div class="offering-title">VIP Support Package</div>
+                    <div class="offering-subtitle">1-Year Priority Support</div>
+                    <div class="offering-description">Get instant help whenever you need it. Premium support with expert assistance and priority response.</div>
+                    <ul class="offering-benefits">
+                        <li>24/7 priority chat & phone support</li>
+                        <li>Average response time: &lt;15 minutes</li>
+                        <li>Dedicated support agent</li>
+                        <li>Free troubleshooting & optimization</li>
+                    </ul>
+                    <div class="offering-review">
+                        <div class="review-author">⭐⭐⭐⭐⭐ Mike J.</div>
+                        <div class="review-text">"Best support I've ever experienced. Super helpful team!"</div>
+                    </div>
+                    <div class="offering-footer">
+                        <div class="offering-price">₹999</div>
+                        <button class="add-to-cart" data-offering="support">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Insurance Card -->
+                <div class="offering-card" id="offering-insurance">
+                    <div class="offering-badge popular">💥 Popular</div>
+                    <div class="offering-icon">🔥</div>
+                    <div class="offering-title">Accident Guard Plan</div>
+                    <div class="offering-subtitle">Comprehensive Damage Coverage</div>
+                    <div class="offering-description">Complete protection against accidents. Covers drops, spills, liquid damage, and impact damage with no questions asked.</div>
+                    <ul class="offering-benefits">
+                        <li>Covers drops, spills & water damage</li>
+                        <li>Coverage up to ₹15,000</li>
+                        <li>Valid for 2 years</li>
+                        <li>Quick replacement guarantee</li>
+                    </ul>
+                    <div class="offering-review">
+                        <div class="review-author">⭐⭐⭐⭐⭐ Rajesh P.</div>
+                        <div class="review-text">"Saved me ₹12,000 when I dropped my headphones. Amazing!"</div>
+                    </div>
+                    <div class="offering-footer">
+                        <div class="offering-price">₹2,499</div>
+                        <button class="add-to-cart" data-offering="insurance">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Accessories Card -->
+                <div class="offering-card" id="offering-accessory">
+                    <div class="offering-badge recommended">💎 Recommended</div>
+                    <div class="offering-icon">🎵</div>
+                    <div class="offering-title">Premium Audio Bundle</div>
+                    <div class="offering-subtitle">Complete Audio Solution</div>
+                    <div class="offering-description">Elevate your audio experience with premium quality cables and accessories that maximize your headphone's potential.</div>
+                    <ul class="offering-benefits">
+                        <li>Gold-plated connectors for clarity</li>
+                        <li>Perfectly matched with your headphones</li>
+                        <li>Lifetime warranty included</li>
+                        <li>Premium packaging & storage</li>
+                    </ul>
+                    <div class="offering-review">
+                        <div class="review-author">⭐⭐⭐⭐⭐ Ananya P.</div>
+                        <div class="review-text">"Sound quality improved noticeably. Worth every penny!"</div>
+                    </div>
+                    <div class="offering-footer">
+                        <div class="offering-price">₹799</div>
+                        <button class="add-to-cart" data-offering="accessory">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button class="btn btn-secondary" id="continue-shopping">
+                ← Continue Shopping
+            </button>
+            <button class="btn btn-primary" id="checkout-btn">
+                Proceed to Checkout 🛒
+            </button>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🛒 Your Cart</h2>
+                <button class="modal-close" id="closeModal">×</button>
+            </div>
+            <div class="modal-body">
+                <div id="cartItems"></div>
+                <div class="price-summary">
+                    <div class="price-row">
+                        <span>Base Total:</span>
+                        <span id="baseTotal">₹18,288</span>
+                    </div>
+                    <div id="addedItemsRow" style="display: none;">
+                        <div class="price-row">
+                            <span>Added Items:</span>
+                            <span id="addedItemsPrice">₹0</span>
+                        </div>
+                    </div>
+                    <div class="price-row total" id="finalTotal">
+                        <span>Total:</span>
+                        <span>₹18,288</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="continueShopping">← Continue Shopping</button>
+                <button class="btn btn-primary" id="confirmCheckout">✓ Confirm & Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal" id="checkoutModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>✓ Order Complete!</h2>
+                <button class="modal-close" id="closeCheckout">×</button>
+            </div>
+            <div class="modal-body" style="text-align: center;">
+                <div style="font-size: 64px; margin-bottom: 20px;">🎉</div>
+                <h3 style="font-size: 24px; margin-bottom: 12px;">Thank You!</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 24px;">Your order has been successfully placed. A confirmation email has been sent to your registered email address.</p>
+                <div style="background: var(--primary-light); padding: 20px; border-radius: 8px; margin-bottom: 24px;">
+                    <p style="margin: 8px 0; font-size: 14px;"><strong>Order ID:</strong> ORD-2026-001234</p>
+                    <p style="margin: 8px 0; font-size: 14px;"><strong>Est. Delivery:</strong> Jan 9-12, 2026</p>
+                    <p style="margin: 8px 0; font-size: 14px;"><strong>Total Amount:</strong> <span id="checkoutTotal" style="color: var(--primary-blue); font-weight: 700;">₹18,288</span></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" style="flex: 1;" id="backHome">← Back to Home</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span id="toastMessage">Item added to cart!</span>
+        <button style="background: none; border: none; color: white; font-size: 18px; cursor: pointer; padding: 0;" id="toastClose">×</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
